@@ -1,0 +1,85 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="uno">
+    <ion-buttons slot="start">
+      <ion-menu-button color="light" auto-hide="false"></ion-menu-button>
+    </ion-buttons>
+    <ion-title color="light">
+      RegistrApp
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <br>
+  <ion-label>¡Bienvenido/a {{diccionario.user}}!</ion-label>
+  
+<!--inicio-->
+  <ion-card>
+    
+    <ion-card-content>
+      <ion-list>
+
+        <!--registro de asistencia-->
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Registro" src="https://cdn-icons-png.flaticon.com/512/6556/6556653.png" />
+          </ion-thumbnail>
+          <!--<ion-label>Horario de clases</ion-label>-->
+          <a [routerLink]="['/registro']">Registro de asistencia</a>
+        </ion-item>
+
+        <!--Horario-->
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Horario" src="https://cdn-icons-png.flaticon.com/512/17008/17008706.png" />
+          </ion-thumbnail>
+          <!--<ion-label>Horario de clases</ion-label>-->
+          <a [routerLink]="['/horario']">Horario</a>
+        </ion-item>
+
+        <!--Asignaturas-->
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Asignaturas" src="https://cdn-icons-png.freepik.com/512/3532/3532127.png" />
+          </ion-thumbnail>
+          <!--<ion-label>Asignaturas</ion-label>-->
+          <a [routerLink]="['/asignaturas']">Asignaturas</a>
+        </ion-item>
+  
+        <!--Notas-->
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Notas" src="https://cdn-icons-png.flaticon.com/256/4854/4854585.png" />
+          </ion-thumbnail>
+          <!--<ion-label>Notas</ion-label>-->
+          <a [routerLink]="['/notas']">Notas</a>
+        </ion-item>
+        
+        <!--Asistencias-->
+        <ion-item lines="none">
+          <ion-thumbnail slot="start">
+            <img alt="Asistencias" src="https://cdn-icons-png.flaticon.com/512/4854/4854344.png" />
+          </ion-thumbnail>
+          <!--<ion-label>Asistencias</ion-label>-->
+          <a [routerLink]="['/asistencias']">Asistencias</a>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+<!--fin-->
+
+<!--Botón Cerrar sesión-->
+<ion-toolbar>
+  <ion-buttons slot="primary">
+    <ion-button color="primary" [routerLink]="['/home']"> Cerrar sesión </ion-button>
+  </ion-buttons>
+</ion-toolbar>
+
+</ion-content>
+
+<ion-footer [translucent]="true">
+  <ion-toolbar class="uno">
+  </ion-toolbar>
+</ion-footer>
+

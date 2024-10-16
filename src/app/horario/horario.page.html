@@ -1,0 +1,94 @@
+<!--Inicio header-->
+<ion-header [translucent]="true">
+  <ion-toolbar class="uno">
+    <ion-buttons slot="start">
+      <ion-back-button color="light" default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="light">
+      RegistrApp
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<!--Fin header-->
+
+<ion-content [fullscreen]="true">
+
+  <ion-toolbar>
+    <ion-title size="large">Horario</ion-title>
+  </ion-toolbar>
+  
+  <ion-accordion-group>
+    <!--ion-accordion Lunes-->
+    <ion-accordion value="first">
+      <ion-item slot="header">
+        <ion-label>Lunes</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">13:41 - 15:10 ESTADÍSTICA DESCRIPTIVA</div>
+      <div class="ion-padding" slot="content">Sala 303</div>
+
+      <div class="ion-padding" slot="content">16:01 - 17:20 PROGRAMACIÓN DE APLICACIONES MÓVILES</div>
+      <div class="ion-padding" slot="content">Sala 304</div>
+    </ion-accordion>
+
+    <!--ion-accordion Martes-->
+    <ion-accordion value="second">
+      <ion-item slot="header">
+        <ion-label>Martes</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">11:31 - 12:50 ARQUITECTURA</div>
+      <div class="ion-padding" slot="content">Sala 301</div>
+
+      <div class="ion-padding" slot="content">13:01 - 14:20 ÉTICA PARA EL TRABAJO</div>
+      <div class="ion-padding" slot="content">Sala 309</div>
+    </ion-accordion>
+
+    <!--ion-accordion Miércoles-->
+    <ion-accordion value="third">
+      <ion-item slot="header">
+        <ion-label>Miércoles</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">10:41 - 12:50 PROGRAMACIÓN DE APLICACIONES MÓVILES</div>
+      <div class="ion-padding" slot="content">Sala 310</div>
+
+      <div class="ion-padding" slot="content">14:31 - 15:50 CALIDAD DE SOFTWARE</div>
+      <div class="ion-padding" slot="content">Sala 301</div>
+    </ion-accordion>
+
+    <!--ion-accordion Jueves-->
+    <ion-accordion value="fourth">
+      <ion-item slot="header">
+        <ion-label>Jueves</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">16:01 - 17:20 ESTADÍSTICA DESCRIPTIVA</div>
+      <div class="ion-padding" slot="content">Sala 303</div>
+    </ion-accordion>
+
+    <!--ion-accordion Viernes-->
+    <ion-accordion value="fifth">
+      <ion-item slot="header">
+        <ion-label>Viernes</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">13:41 - 15:50 ARQUITECTURA</div>
+      <div class="ion-padding" slot="content">Sala 301</div>
+
+      <div class="ion-padding" slot="content">16:01 - 17:20 CALIDAD DE SOFTWARE</div>
+      <div class="ion-padding" slot="content">Sala 301</div>
+    </ion-accordion>
+    
+    <!--ion-accordion Sábado-->
+    <ion-accordion value="sixth">
+      <ion-item slot="header">
+        <ion-label>Sábado</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">NO TIENES RAMOS PARA ESTE DÍA</div>
+    </ion-accordion>
+  </ion-accordion-group>
+
+</ion-content>
+
+<!--Inicio footer-->
+<ion-footer [translucent]="true">
+  <ion-toolbar class="uno">
+  </ion-toolbar>
+</ion-footer>
+<!--Fin footer-->

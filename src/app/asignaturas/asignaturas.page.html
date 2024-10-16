@@ -1,0 +1,78 @@
+<ion-header [translucent]="true">
+  <ion-toolbar class="uno">
+    <ion-buttons slot="start">
+      <ion-back-button color="light" default-href="#"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="light">
+      RegistrApp
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-toolbar>
+    <ion-title size="large">Asignaturas</ion-title>
+  </ion-toolbar>
+  
+<!--inicio-->
+  <ion-card>
+    
+    <ion-card-content>
+      <ion-list>
+        <!--primero-->
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Arquitectura" src="https://cdn-icons-png.flaticon.com/512/8654/8654539.png" />
+          </ion-thumbnail>
+          <!--<ion-label>Horario de clases</ion-label>-->
+          <a [routerLink]="[]">Arquitectura</a>
+        </ion-item>
+
+        <!--segundo-->
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Calidad" src="https://cdn-icons-png.flaticon.com/512/11746/11746549.png" />
+          </ion-thumbnail>
+          <!--<ion-label>Asignaturas</ion-label>-->
+          <a [routerLink]="[]">Calidad de software</a>
+        </ion-item>
+  
+        <!--tercero-->
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Estadistica" src="https://cdn-icons-png.flaticon.com/512/2084/2084541.png" />
+          </ion-thumbnail>
+          <!--<ion-label>Notas</ion-label>-->
+          <a [routerLink]="[]">Estadística descriptiva</a>
+        </ion-item>
+        
+        <!--cuarto-->
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img alt="Etica" src="https://cdn-icons-png.flaticon.com/512/4052/4052216.png" />
+          </ion-thumbnail>
+          <!--<ion-label>Notas</ion-label>-->
+          <a [routerLink]="[]">Ética del trabajo</a>
+        </ion-item>
+
+        <!--quinto-->
+        <ion-item lines="none">
+          <ion-thumbnail slot="start">
+            <img alt="Programacion" src="https://cdn-icons-png.flaticon.com/512/2798/2798044.png" />
+          </ion-thumbnail>
+          <!--<ion-label>Asistencias</ion-label>-->
+          <a [routerLink]="[]">Programación de aplicaciones móviles</a>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+<!--fin-->
+
+
+</ion-content>
+
+<ion-footer [translucent]="true">
+  <ion-toolbar class="uno">
+  </ion-toolbar>
+</ion-footer>
